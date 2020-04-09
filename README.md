@@ -18,7 +18,7 @@ Airbnb is an online marketplace for rentors to rent out lodging such as homes, a
 
 Being raised in San Francisco, I am aware that house prices between districts can vary dramatically. 
 
-As of April 2020
+As of April 2020:
 - Noe Valley median price: **$2,210,000**
 - Mission District median price: **$1,530,000**
 - Distance between the centers of the two neighboring districts is 1.8 miles.
@@ -44,12 +44,13 @@ Airbnb has public downloadable datasets between cities across the world. There a
 
 Listing price mostly concentrate in the lower end, with a handful of really expensive listing with over $500 per night.
 
-![all_listings](images/listing_all.png)
+![all_listings](images/list_all.png)
 
 **How do price vary between neighborhoods?**
 
 ![top_20](images/top_20.png)
 
+![accomomdates](images/accomoates.png)
 
 analysis 
 conclusion
