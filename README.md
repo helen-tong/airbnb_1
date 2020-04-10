@@ -12,7 +12,7 @@
 
 ## Background 
 
-Airbnb is an online marketplace for arranging and offering lodging and tourism experiences. Many individuals have been able to earn an extra stream of income through Airbnb by renting out lodging such as homes, apartments, private rooms lofts, and all kinds of other living space. Airbnb was founded in 2008 and had since made a huge impact in the tourism industry. According to [Airbnb Wikipedia](https://declara.com/content/A5YPWkg8), as of October 2018, it had over 1,000,000 listings in 34,000 cities and 190 countries. Airbnb has revolutionized the lodging market by providing opportunities for individuals to make extra income, keep hotel rates in check, and offer travelers more lodging options. Today, we will be mainly looking at Airbnb listings in San Francisco, specifically diving deeply on and how the listing price are determined by looking at all of its 2019 listings.
+Airbnb is an online marketplace for arranging and offering lodging and tourism experiences. Many individuals have been able to earn an extra stream of income through Airbnb by renting out lodging such as homes, apartments, private rooms, lofts, and all kinds of other living space. Airbnb was founded in 2008 and had since made a huge impact in the tourism industry. According to [Airbnb Wikipedia](https://declara.com/content/A5YPWkg8), as of October 2018, it had over 1,000,000 listings in 34,000 cities and 190 countries. Airbnb has revolutionized the lodging market by providing opportunities for individuals to make extra income, keep hotel rates in check, and offer travelers more lodging options. Today, we will be mainly looking at Airbnb listings in San Francisco, specifically diving deeply on and how the listing price are determined by looking at all of its 2019 listings.
 
 ---
 
@@ -53,7 +53,7 @@ As expected, listing price generally concentrate on the lower end, with a handfu
 
 **How do price vary between neighborhoods?**
 
-Graph below shows average listing price for the top 20 most expensive neighborhoods along with count of listings in the neighborhood. It does not seem to me that count of listings affect price. Now I am currious to see what affects pricing other than the location of listings.
+Graph below shows average listing price for the top 20 most expensive neighborhoods along with count of listings in the neighborhood. It does not seem to me that count of listings affect price. Now I am curious to see what affects pricing other than the location of listings.
 
 ![top_20](images/top_20.png)
 
