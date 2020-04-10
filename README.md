@@ -90,12 +90,12 @@ Here is the distribution of listing price between the two neighborhoods.
 ![mission_noe_dist](images/mission_noe_dist.png)
 
 One tail hypothesis test varialbes:
-- Null Hypothesis: Noe Valley is more expensive than Mission by chance.
-- Alternative Hypothesis: Noe Valley is truly more expensive than Mission. 
-- Alpha Level: 0.05
-- Welch Test Statistics: 2.34
-- Degrees of Freedom: 514.41
-- p-value: 0.0099
+- **Null Hypothesis:** Noe Valley is more expensive than Mission by chance.
+- **Alternative Hypothesis:** Noe Valley is truly more expensive than Mission. 
+- **Alpha Level:** 0.05
+- **Welch Test Statistics:** 2.34
+- **Degrees of Freedom:** 514.41
+- **p-value:** 0.0099
 
 According to my findings, we can see that the Welch's t-test statistics is 2.34. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0099. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Noe Valley are generally more expensive than Mission.
 
@@ -119,12 +119,12 @@ Here is the distribution of listing price between the two neighborhoods.
 ![sunset_dist](images/sunset_dist.png)
 
 One tail hypothesis test varialbes:
-- Null Hypothesis: Inner Sunset is more expensive than Outer Sunset by chance.
-- Alternative Hypothesis: Inner Sunset is truly more expensive than Outer Sunset. 
-- Alpha Level: 0.05
-- Welch Test Statistics: 2.95
-- Degrees of Freedom: 281.25
-- p-value: 0.0017
+- **Null Hypothesis:** Inner Sunset is more expensive than Outer Sunset by chance.
+- **Alternative Hypothesis:** Inner Sunset is truly more expensive than Outer Sunset. 
+- **Alpha Level:** 0.05
+- **Welch Test Statistics:** 2.95
+- **Degrees of Freedom:** 281.25
+- **p-value:** 0.0017
 
 According to my findings, we can see that the Welch's t-test statistics is 2.95. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0017. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Inner Sunset are generally more expensive than Outer Sunset.
 
