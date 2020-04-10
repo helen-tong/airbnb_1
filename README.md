@@ -64,7 +64,7 @@ I calculated the price per person rate for each listing by dividing listing pric
 ![coords_plot](images/coords_plot.png)
 
 
-**One would think that listing price would increase as number of guests allowed increase. Is that the case for listings in San Francisco?**
+**One would think that listing price would increase as number of guests increases. Is that the case for listings in San Francisco?**
 
 As it turns out not so much. This tells me that neighborhood might be the only factor that is affecting listing price.
 
@@ -75,7 +75,7 @@ As it turns out not so much. This tells me that neighborhood might be the only f
 
 # Analysis
 
-## Mission vs. Noey Valley
+## Mission vs. Noe Valley
 
 - Mission 
     - Avg price: $225.95
@@ -104,7 +104,7 @@ According to my findings, we can see that the Welch's t-test statistics is 2.34.
 ### Mann-Whitney U-test
 I also performend a Mann-Whitney U-test with  similar result with a p-value of 0.016. Noe Valley is clearly more expensive than Mission.
 
-## Innser Sunset vs. Outer Sunset
+## Inner Sunset vs. Outer Sunset
 
 - Inner Sunset 
     - Avg price: $230.24
