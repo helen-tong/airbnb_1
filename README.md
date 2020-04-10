@@ -10,7 +10,7 @@
 
 ## Background 
 
-Airbnb is an online marketplace for rentors to rent out lodging such as homes, apartment, lofts, and all kinds of living space you can think of. According to [Airbnb](https://declara.com/content/A5YPWkg8), as of October 2018, it has over 1,000,000 listings in 34,000 cities and 190 countries. It has revolutionized the lodging market and provided opportunities for individuals make an extreme stream of income, keep hotel rates in check, and provide travelers more lodging options.
+Airbnb is an online marketplace for rentors to rent out lodging such as homes, apartment, lofts, and all kinds of living space. According to [Airbnb](https://declara.com/content/A5YPWkg8), as of October 2018, it has over 1,000,000 listings in 34,000 cities and 190 countries. It has revolutionized the lodging market providing opportunities for individuals to make an extra income, keep hotel rates in check, and offer travelers more lodging options.
 
 ---
 
@@ -34,7 +34,7 @@ House prices play a role between districts, but how do Airbnb prices vary betwee
 
 ## The Data
 
-Airbnb has public downloadable datasets between cities across the world. There are details of each listing, reviews and neighborhoods. I was mainly working off of the detail listing datasets which contains all listings of San Francisco in 2019. Data was scraped June of 2019 and it has 7575 rows, 106 columns. 
+Airbnb has public downloadable datasets between cities across the world. There are details of each listing, reviews and neighborhoods. I was mainly working off of the detailed listing dataset which contains all listings of San Francisco in 2019. Data was scraped June of 2019 and it has 7575 rows, 106 columns. 
 
 ---
 
@@ -47,10 +47,20 @@ Listing price mostly concentrate in the lower end, with a handful of really expe
 ![all_listings](images/list_all.png)
 
 **How do price vary between neighborhoods?**
+Graph below shows average listing price for the top 20 most expensive neighborhoods along with count of listings in the neighborhood.
 
 ![top_20](images/top_20.png)
 
+
+I am curious to see what affects pricing other than location of the listings. 
+
+**One would think that listing price would increase as number of guests allowed increase. Is that the case for listings in San Francisco?**
+
+It turns out not so much.
+
 ![accomomdates](images/accomoates.png)
+
+
 
 analysis 
 conclusion
