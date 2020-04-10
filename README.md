@@ -4,14 +4,14 @@
 - [Background](#Background)
 - [Project Goal](#project-goal)
 - [Data](#the-data)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-(eda))
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Analysis](#analysis)
 
 ---
 
 ## Background 
 
-Airbnb is an online marketplace for rentors to rent out lodging such as homes, apartment, lofts, and all kinds of living space. According to [Airbnb](https://declara.com/content/A5YPWkg8), as of October 2018, it has over 1,000,000 listings in 34,000 cities and 190 countries. It has revolutionized the lodging market providing opportunities for individuals to make an extra income, keep hotel rates in check, and offer travelers more lodging options.
+Airbnb is an online marketplace for renters to rent out lodging such as homes, apartment, lofts, and all kinds of living space. According to [Airbnb](https://declara.com/content/A5YPWkg8), as of October 2018, it has over 1,000,000 listings in 34,000 cities and 190 countries. It has revolutionized the lodging market by providing opportunities for individuals to make an extra income, keep hotel rates in check, and offer travelers more lodging options.
 
 ---
 
@@ -25,8 +25,8 @@ As of April 2020:
 - Distance between the centers of the two neighboring districts is 1.8 miles.
 
 Let's look at another group:
-- Inner Sunet median home price: **$1,750,000** 
-- Outer Sunset median home price of **$1,429,000**
+- Inner Sunset median home price: **$1,750,000** 
+- Outer Sunset median home price: **$1,429,000**
 - Distance between the heart of two neighboring districts is also 1.8 miles.
 
 House prices play a role between districts, but how do Airbnb prices vary between them? In other words, if investors are looking to buy a property in San Francisco just for an extra stream of income through Airbnb, should they be saving over a million dollars on purchasing properties in a less expensive neighborhood?
@@ -35,11 +35,11 @@ House prices play a role between districts, but how do Airbnb prices vary betwee
 
 ## The Data
 
-Airbnb has public downloadable datasets between cities across the world. There are details of each listing, reviews and neighborhoods. I was mainly working off of the detailed listing dataset which contains all listings of San Francisco in 2019. Data was scraped June of 2019 and it has 7575 rows, 106 columns. 
+Airbnb has public downloadable datasets between cities across the world. There are details of each listing, reviews and neighborhoods. I was mainly working off of the detailed listing dataset which contains all listings for San Francisco in 2019. Data was scraped June of 2019 and it has 7575 rows, 106 columns. 
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis
 
 **How are listing price distributed across San Francisco?**
 
@@ -54,7 +54,7 @@ Graph below shows average listing price for the top 20 most expensive neighborho
 ![top_20](images/top_20.png)
 
 
-Then I calculated the price per person rate for each listing by dividing listing price by the number of accommodates to get the average price per person. I plotted them using their latitudes and longitudes. Colors are by average price per neighborhood, circle sizes are by price per person for each listing. This image shows that listings in center of the city tend of have higher price, and then listings facing the Golden Gate Bridge (North) are the highest priced. 
+I calculated the price per person rate for each listing by dividing listing price by number accommodated to get the average price per person. I plotted them using their latitudes and longitudes. Colors are by average price per neighborhood, circle sizes are by price per person for each listing. This image shows that listings in center of the city tend of have higher price, and then listings facing the Golden Gate Bridge (North) are the highest priced. 
 
 
 ![coords_plot](images/coords_plot.png)
@@ -93,7 +93,7 @@ One tail hypothesis test varialbes:
 - Degrees of Freedom: 514.41
 - p-value: 0.0099
 
-According to our findings below, we can see that the Welch's test statistics is 2.34. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0099. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Noe Valley are generally more expensive than Mission.
+According to my findings, we can see that the Welch's test statistics is 2.34. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0099. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Noe Valley are generally more expensive than Mission.
 
 ![mission_noe_curve](images/mission_noe_curve.png)
 
@@ -122,12 +122,16 @@ One tail hypothesis test varialbes:
 - Degrees of Freedom: 281.25
 - p-value: 0.0017
 
-According to our findings, we can see that the Welch's test statistics is 2.95. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0017. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Inner Sunset are generally more expensive than Outer Sunset.
+According to my findings, we can see that the Welch's test statistics is 2.95. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0017. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Inner Sunset are generally more expensive than Outer Sunset.
 
 ![sunset_curve](images/sunset_curve.png)
 
+### Mann-Whitney U-test
+ The Mann-Whitney U-test with similar result with a p-value of 0.0000. Inner Sunset is clearly more expensive than Outer Sunset.
 
 # Conclusion
+
+In conlusion, both Welch's T Test and Mann-Whitney U Test return statistically significant result to indicate Airbnb listing prices do vary by neighborhoods in San Francisco,even if they are in close proximity. If an investor wants to purchase a property in San Francisco for listing in Airbnb, the location of the property is a good indicator of how much to charge for the listing. 
 
  
 
