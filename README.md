@@ -12,7 +12,7 @@
 
 ## Background 
 
-Airbnb is an online marketplace for arranging and offering lodging and tourism experiences. Many individuals have been able to earn an extra stream of income through Airbnb by renting out lodging such as homes, apartments, private rooms lofts, and all kinds of other living space. Airbnb was founded in 2008 and had since made a huge impact in the tourism industry. According to [Airbnb Wikipedia](https://declara.com/content/A5YPWkg8), as of October 2018, it had over 1,000,000 listings in 34,000 cities and 190 countries. Airbnb has revolutionized the lodging market by providing opportunities for individuals to make extra income, keep hotel rates in check, and offer travelers more lodging options.
+Airbnb is an online marketplace for arranging and offering lodging and tourism experiences. Many individuals have been able to earn an extra stream of income through Airbnb by renting out lodging such as homes, apartments, private rooms lofts, and all kinds of other living space. Airbnb was founded in 2008 and had since made a huge impact in the tourism industry. According to [Airbnb Wikipedia](https://declara.com/content/A5YPWkg8), as of October 2018, it had over 1,000,000 listings in 34,000 cities and 190 countries. Airbnb has revolutionized the lodging market by providing opportunities for individuals to make extra income, keep hotel rates in check, and offer travelers more lodging options. Today, we will be mainly looking at Airbnb listings in San Francisco, specifically diving deeply on and how the listing price are determined by looking at all of its 2019 listings.
 
 ---
 
@@ -33,7 +33,7 @@ Now let's look at another group:
 - Distance between the heart of two neighboring districts is also 1.8 miles.
 
 
-House prices play a role between districts, but how do Airbnb prices vary between them? In other words, if investors are looking to buy a property in San Francisco just for an extra stream of income through Airbnb, should they be saving close to one million dollars on purchasing properties in a less expensive neighborhood?
+House prices play a role between districts, but how do Airbnb prices vary between them? In other words, if investors are looking to buy a property in San Francisco just for an extra stream of income through Airbnb, should they be saving more than half a million dollars by purchasing properties in a less expensive neighborhood?
 
 ---
 
@@ -97,7 +97,7 @@ One tail hypothesis test varialbes:
 - Degrees of Freedom: 514.41
 - p-value: 0.0099
 
-According to my findings, we can see that the Welch's test statistics is 2.34. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0099. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Noe Valley are generally more expensive than Mission.
+According to my findings, we can see that the Welch's t-test statistics is 2.34. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0099. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Noe Valley are generally more expensive than Mission.
 
 ![mission_noe_curve](images/mission_noe_curve.png)
 
@@ -126,7 +126,7 @@ One tail hypothesis test varialbes:
 - Degrees of Freedom: 281.25
 - p-value: 0.0017
 
-According to my findings, we can see that the Welch's test statistics is 2.95. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0017. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Inner Sunset are generally more expensive than Outer Sunset.
+According to my findings, we can see that the Welch's t-test statistics is 2.95. The probability of having this result, or more extreme, given the null hypothesis is true is 0.0017. This is statistically signficiant enough for us to reject the null hypothesis. Airbnb listings in Inner Sunset are generally more expensive than Outer Sunset.
 
 ![sunset_curve](images/sunset_curve.png)
 
@@ -135,7 +135,9 @@ According to my findings, we can see that the Welch's test statistics is 2.95. T
 
 # Conclusion
 
-In conlusion, both Welch's T Test and Mann-Whitney U Test return statistically significant result to indicate Airbnb listing prices do vary by neighborhoods in San Francisco,even if they are in close proximity. If an investor wants to purchase a property in San Francisco for listing in Airbnb, the location of the property is a good indicator of how much to charge for the listing. 
+When I ran my hypothesis testing, my Welch's t-tests were returning different results from my Mann-Whitney U-tests. Reason being there are a couple of outliers in the neighborhoods with prices listed for more than $2,000 a night. As Welch's t-tests are sensitive to standard deviations, I removed all listing prices of more than $2,000 and they gave me similar results to my Mann-Whitney U-test. 
+
+In conlusion, both Welch's t-tests and Mann-Whitney U Tests return statistically significant results to indicate Airbnb listing prices do vary by neighborhoods in San Francisco, even if they are in close proximity. If an investor wants to purchase a property in San Francisco for listing in Airbnb, the location of the property is a good indicator of how much to charge for the listing. 
 
  
 
